@@ -1,0 +1,19 @@
+{
+    "env": {
+        "browser": true,
+        "es2001": true
+    },
+    "extends": [
+        "airbnb"
+    ],
+    "parserOptions": {
+        "ecmaVersion": 13,
+        "sourceType": "module"
+    },
+    "rules": {
+    },
+    "overrides": [{
+        "files":["**/*.test.ts"],
+        "env": {"jest": true}
+    }]
+}

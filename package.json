@@ -1,0 +1,33 @@
+{
+  "name": "purchase-amount",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/SergeyEn76/Purchase-amount#readme",
+  "bugs": {
+    "url": "https://github.com/SergeyEn76/Purchase-amount/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SergeyEn76/Purchase-amount.git"
+  },
+  "license": "ISC",
+  "author": "SergeyEn76",
+  "type": "commonjs",
+  "main": "index.ts",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "test": "jest --coverage",
+    "lint": "eslint ./"
+  },
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "babel-loader": "^10.0.0",
+    "eslint": "^9.29.0",
+    "ts-jest": "^29.4.0",
+    "ts-loader": "^9.5.2",
+    "typescript": "^5.8.3",
+    "webpack": "^5.99.9",
+    "webpack-cli": "^6.0.1"
+  }
+}
