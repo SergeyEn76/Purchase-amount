@@ -12,28 +12,37 @@ export default class Cart {
     }
 
     totalCost(): number {
-        let count: number = 0;
+        const count = this._items.reduce((acc, item) => {
+            return acc + item.price;
+        }, 0);
+        return count;
+
+        /*let count: number = 0;
         this._items.forEach((item) => {
             count += item.price;
         });
-        return count;
+        return count;*/
     }
 
     totalDiscountCost(discount: number): number {
-        let count: number = 0;
+        return this.totalCost() - discount;
+
+        /*let count: number = 0;
         this._items.forEach((item) => {
             count += item.price - discount;
         });
-        return count;
+        return count;*/
     }
 
     deleteItem(id: number): void {
-        console.log(this._items);
+        this._items = this._items.filter(item => item.id != id);
+
+        /*console.log(this._items);
         for (let i = 0; i < this._items.length; i++) {
             if (this._items[i].id === id) {
                 this._items.splice(i, 1);
                 break;
             }
-        }
+        }*/
     }
 }

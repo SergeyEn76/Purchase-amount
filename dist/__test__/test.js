@@ -38,6 +38,6 @@ test('Подсчет суммарной стоимости (с учётом ск
     const discount = 100;
     cart.add(book);
     cart.add(musicAlbum);
-    expect(cart.totalDiscountCost(discount)).toBe(book.price - discount + musicAlbum.price - discount);
+    expect(cart.totalDiscountCost(discount)).toBe(book.price + musicAlbum.price - discount);
 });
 //# sourceMappingURL=test.js.map
